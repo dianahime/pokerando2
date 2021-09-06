@@ -1,10 +1,10 @@
 # Useful links
 
-Pagination: https://odinuv.cz/walkthrough/pagination/
-RTK quick start: https://redux-toolkit.js.org/tutorials/quick-start
-RTK QUERY quick start : https://redux-toolkit.js.org/tutorials/rtk-query/
-Redux code structure: https://redux.js.org/faq/code-structure
-Redux best practice: https://redux.js.org/style-guide/style-guide
+Pagination: https://odinuv.cz/walkthrough/pagination/ \
+RTK quick start: https://redux-toolkit.js.org/tutorials/quick-start \
+RTK QUERY quick start : https://redux-toolkit.js.org/tutorials/rtk-query/ \
+Redux code structure: https://redux.js.org/faq/code-structure \
+Redux best practice: https://redux.js.org/style-guide/style-guide \
 
 ---
 
