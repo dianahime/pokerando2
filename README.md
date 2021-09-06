@@ -1,3 +1,13 @@
+# Useful links
+
+Pagination: https://odinuv.cz/walkthrough/pagination/
+RTK quick start: https://redux-toolkit.js.org/tutorials/quick-start
+RTK QUERY quick start : https://redux-toolkit.js.org/tutorials/rtk-query/
+Redux code structure: https://redux.js.org/faq/code-structure
+Redux best practice: https://redux.js.org/style-guide/style-guide
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
