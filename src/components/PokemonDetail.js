@@ -4,7 +4,8 @@ import { selectSelectedPokemonName } from '../store/pokemonSlice';
 
 export const PokemonDetail = ({ onClose }) => {
   const selectedPokemonName = useSelector(selectSelectedPokemonName);
-  const { data, error, isLoading } = useGetPokemonByNameQuery(selectedPokemonName);
+  const { data, error, isLoading, isSuccess, isError } =
+    useGetPokemonByNameQuery(selectedPokemonName);
 
   if (!data) {
     return null;
@@ -13,13 +14,19 @@ export const PokemonDetail = ({ onClose }) => {
     return <div>Loading...</div>;
   }
   if (error) {
-    return <div>{error}</div>;
+    return <div>{error.message}</div>;
   }
 
   return (
     <>
-      <div>{data.name}</div>
-      <button onClick={onClose}>close</button>
+      {isLoading && <div>Loading...</div>}
+      {isError && <div>{error.message}</div>}
+      {isSuccess && data && (
+        <>
+          <div>{data.name}</div>
+          <button onClick={onClose}>close</button>
+        </>
+      )}
     </>
   );
 };
